@@ -20,6 +20,7 @@ form {
 a:hover {
   text-decoration:none;
   color:#999;
+  cursor:pointer;
 }
 
 .center {
