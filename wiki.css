@@ -1,26 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 body {
-  background-color: #6b1414;
+  background-color: #00b377;
 }
 
-a, p {
+* {
+	font-family:'Open Sans', sans-serif;
+}
+
+p {
   color:white;
-  font-family:'Open Sans', sans-serif;
-  font-size:18px;
+  font-size:20px;
   text-align:center;
-  text-decoration:none;
+  margin-top:-40px;
 }
 
 form {
   text-align: center;
-  margin:15px;
-}
-
-a:hover {
-  text-decoration:none;
-  color:#999;
-  cursor:pointer;
+  margin:16px;
 }
 
 .center {
@@ -28,11 +25,18 @@ a:hover {
   margin-top:20%;
 }
 
+.center a {
+  color:white;
+  font-size:20px;
+  text-align:center;
+  text-decoration:none;
+}
+
 .contents {
     height: 200px;
     width: 400px;
-    position: fixed;
-    top: 40%;
+    position:relative;
+    top: 60px;
     bottom:50%;
     left: 50%;
     margin-top: -100px;
@@ -41,12 +45,13 @@ a:hover {
 
 input[type=text] {
     width: 150px;
+    height:40px;
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 10px;
     font-size: 18px;
     background-color: white;
-    padding: 10px 20px 10px 40px;
+    padding: 12px 20px 12px 20px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
     outline: none;
@@ -54,4 +59,42 @@ input[type=text] {
 
 input[type=text]:focus {
     width: 250px;
+}
+
+.effect {
+  border: 2px solid #ffa280;
+  background-color: white;
+  font-size: 18px;
+  padding:10px 10px 20px 10px;
+  border-radius:10px;
+}
+
+#results {
+  padding: 30px;
+  margin: auto;
+  width:70%;
+}
+
+#results a {
+  float:left;
+  font-weight:bold;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration:none;
+  color:#a300cc;
+  cursor:pointer;
+}
+
+@media(max-width:1000px) {
+  #results{
+    width:90%
+  }
+}
+
+@media(max-width:500px) {
+  #results{
+    width:100%
+  }
 }
